@@ -17,7 +17,7 @@ const AddBooks = () => {
   const submit = async(e)=>{
     e.preventDefault();
     await axios
-    .post("https://bookstore1-ycud.onrender.com/api/v1/add", Data)
+    .post("https://bookstore-backend-app.onrender.com//api/v1/add", Data)
     .then((res)=>alert(res.data.message));
     setData({
       bookname:"",
